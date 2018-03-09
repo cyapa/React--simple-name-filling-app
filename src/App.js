@@ -28,7 +28,7 @@ class App extends Component {
         fname:'Chathura',
         mName:'Wijebandara',
         lName:'Yapa',
-        midNameDisability: true
+        midNameDisability: this.state.midNameDisability
 
       }
     );
@@ -42,17 +42,7 @@ class App extends Component {
       }
     );
   }
-  disableMname = (checked) =>{
-    this.setState(
-      {
-        fname:this.state.fname,
-        mName:this.state.mName,
-        lName:this.state.lName,
-        midNameDisability:false
-      }
-    );
 
-  }
 
   fNameChanged = (event,input)=>{
 
@@ -105,4 +95,3 @@ class App extends Component {
 }
 
 export default App;
-// onCheck={(e,v)=>{this.disableMname(v);}}  />
